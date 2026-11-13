@@ -15,7 +15,7 @@ endif()
 
 target_include_directories(Tests PRIVATE ./Contrib)
 
-target_sources(Tests PRIVATE 
+target_sources(Tests PRIVATE
 	Contrib/catch2/catch_amalgamated.cpp
 	Detour/Tests_Detour.cpp
 	DetourCrowd/Tests_DetourPathCorridor.cpp
@@ -24,6 +24,16 @@ target_sources(Tests PRIVATE
 	Recast/Tests_RecastFilter.cpp
 	Recast/Tests_RecastRasterization.cpp
 )
+
+if (RECASTNAVIGATION_VOLUME)
+	target_sources(Tests PRIVATE
+		RecastVolume/Tests_RecastVolume.cpp
+		RecastVolume/Tests_RecastVolumeFallback.cpp
+		RecastVolume/Tests_Default2DRegression.cpp
+	)
+	target_link_libraries(Tests PRIVATE RecastVolume)
+	target_include_directories(Tests PRIVATE RecastVolume)
+endif()
 
 target_link_libraries(Tests PRIVATE Recast Detour DetourCrowd)
 

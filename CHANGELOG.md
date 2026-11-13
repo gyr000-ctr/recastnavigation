@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 <h2>[Unreleased](https://github.com/recastnavigation/recastnavigation/compare/1.6.0...HEAD)</h2>
+
+### Added
+- Optional 3D navigation volume module (`RecastVolume`, CMake option
+  `RECASTNAVIGATION_VOLUME`). It builds a navigation volume of free height
+  intervals with layered vertical links from a rasterized `rcHeightfield`,
+  retaining non-walkable/obstructed voxels that the 2.5D pipeline discards.
+  Provides 3D nearest-point, voxel-DDA raycast, A* interval paths and
+  straight-path simplification, little-endian serialization with checksum and
+  validation, and 2D Detour fallback wrappers that degrade gracefully instead
+  of failing. The module is purely additive: existing Recast/Detour sources and
+  the default 2D output are unchanged. Query objects own fixed scratch storage
+  and never allocate per frame; build memory is a constant multiple of the
+  voxel data.
 <h2>[1.6.0](https://github.com/recastnavigation/recastnavigation/compare/1.5.1...1.6.0) - 2023-05-21</h2>
 
 ### Added

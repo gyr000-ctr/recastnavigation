@@ -1,0 +1,13 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/gyr/feedback/uid8069/build-novol/cmake_install.cmake",
+		"/home/gyr/feedback/uid8069/build-novol/DebugUtils/cmake_install.cmake",
+		"/home/gyr/feedback/uid8069/build-novol/Detour/cmake_install.cmake",
+		"/home/gyr/feedback/uid8069/build-novol/DetourCrowd/cmake_install.cmake",
+		"/home/gyr/feedback/uid8069/build-novol/DetourTileCache/cmake_install.cmake",
+		"/home/gyr/feedback/uid8069/build-novol/Recast/cmake_install.cmake",
+		"/home/gyr/feedback/uid8069/build-novol/Tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

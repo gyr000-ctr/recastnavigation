@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "Tests/CMakeFiles/Tests.dir/Recast/Tests_Recast.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

@@ -1,0 +1,14 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/gyr/feedback/uid8069/build-volume/cmake_install.cmake",
+		"/home/gyr/feedback/uid8069/build-volume/DebugUtils/cmake_install.cmake",
+		"/home/gyr/feedback/uid8069/build-volume/Detour/cmake_install.cmake",
+		"/home/gyr/feedback/uid8069/build-volume/DetourCrowd/cmake_install.cmake",
+		"/home/gyr/feedback/uid8069/build-volume/DetourTileCache/cmake_install.cmake",
+		"/home/gyr/feedback/uid8069/build-volume/Recast/cmake_install.cmake",
+		"/home/gyr/feedback/uid8069/build-volume/RecastVolume/cmake_install.cmake",
+		"/home/gyr/feedback/uid8069/build-volume/Tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

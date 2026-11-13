@@ -1,0 +1,21 @@
+ninja_dyndep_version = 1.0
+build Tests/CMakeFiles/Tests.dir/Contrib/catch2/catch_amalgamated.cpp.o: dyndep
+
+build Tests/CMakeFiles/Tests.dir/Detour/Tests_Detour.cpp.o: dyndep
+
+build Tests/CMakeFiles/Tests.dir/DetourCrowd/Tests_DetourPathCorridor.cpp.o: dyndep
+
+build Tests/CMakeFiles/Tests.dir/Recast/Tests_Alloc.cpp.o: dyndep
+
+build Tests/CMakeFiles/Tests.dir/Recast/Tests_Recast.cpp.o: dyndep
+
+build Tests/CMakeFiles/Tests.dir/Recast/Tests_RecastFilter.cpp.o: dyndep
+
+build Tests/CMakeFiles/Tests.dir/Recast/Tests_RecastRasterization.cpp.o: dyndep
+
+build Tests/CMakeFiles/Tests.dir/RecastVolume/Tests_RecastVolume.cpp.o: dyndep
+
+build Tests/CMakeFiles/Tests.dir/RecastVolume/Tests_RecastVolumeFallback.cpp.o: dyndep
+
+build Tests/CMakeFiles/Tests.dir/RecastVolume/Tests_Default2DRegression.cpp.o: dyndep
+

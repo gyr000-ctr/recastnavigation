@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "Tests/CMakeFiles/Tests.dir/RecastVolume/Tests_Default2DRegression.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}
