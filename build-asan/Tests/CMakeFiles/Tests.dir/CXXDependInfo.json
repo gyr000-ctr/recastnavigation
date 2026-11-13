@@ -1,0 +1,68 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/home/gyr/feedback/uid7492/build-asan/Tests",
+	"dir-cur-src" : "/home/gyr/feedback/uid7492/Tests",
+	"dir-top-bld" : "/home/gyr/feedback/uid7492/build-asan",
+	"dir-top-src" : "/home/gyr/feedback/uid7492",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"/home/gyr/feedback/uid7492/Tests/./Contrib",
+		"/home/gyr/feedback/uid7492/Recast/Include",
+		"/home/gyr/feedback/uid7492/Detour/Include",
+		"/home/gyr/feedback/uid7492/DetourCrowd/Include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/home/gyr/feedback/uid7492/build-asan/Tests/CMakeFiles/Tests.dir",
+	"sources" : 
+	{
+		"Tests/CMakeFiles/Tests.dir/Contrib/catch2/catch_amalgamated.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/gyr/feedback/uid7492/Tests/Contrib/catch2/catch_amalgamated.cpp"
+		},
+		"Tests/CMakeFiles/Tests.dir/Detour/Tests_Detour.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/gyr/feedback/uid7492/Tests/Detour/Tests_Detour.cpp"
+		},
+		"Tests/CMakeFiles/Tests.dir/DetourCrowd/Tests_DetourFormation.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/gyr/feedback/uid7492/Tests/DetourCrowd/Tests_DetourFormation.cpp"
+		},
+		"Tests/CMakeFiles/Tests.dir/DetourCrowd/Tests_DetourPathCorridor.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/gyr/feedback/uid7492/Tests/DetourCrowd/Tests_DetourPathCorridor.cpp"
+		},
+		"Tests/CMakeFiles/Tests.dir/Recast/Tests_Alloc.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/gyr/feedback/uid7492/Tests/Recast/Tests_Alloc.cpp"
+		},
+		"Tests/CMakeFiles/Tests.dir/Recast/Tests_Recast.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/gyr/feedback/uid7492/Tests/Recast/Tests_Recast.cpp"
+		},
+		"Tests/CMakeFiles/Tests.dir/Recast/Tests_RecastFilter.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/gyr/feedback/uid7492/Tests/Recast/Tests_RecastFilter.cpp"
+		},
+		"Tests/CMakeFiles/Tests.dir/Recast/Tests_RecastRasterization.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/gyr/feedback/uid7492/Tests/Recast/Tests_RecastRasterization.cpp"
+		}
+	}
+}

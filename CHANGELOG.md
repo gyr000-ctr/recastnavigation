@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 <h2>[Unreleased](https://github.com/recastnavigation/recastnavigation/compare/1.6.0...HEAD)</h2>
+
+### Added
+- Optional formation/group navigation for `dtCrowd` via the new `dtCrowdFormation` class. It assigns members to line, wedge, ring or custom slots, drives an anchor along a group path, degrades into two-/single-file columns through narrow passages (with hysteresis) and restores the shape in open space, handles membership changes, stragglers, anchor teleports and unreachable goals, and falls back to individual pathfinding on failure. It only submits ordinary crowd move targets, so single-agent `dtCrowd` behavior, avoidance and pathfinding are unchanged when the feature is not used. The per-frame update performs no heap allocation and runs in time linear in the member count.
 <h2>[1.6.0](https://github.com/recastnavigation/recastnavigation/compare/1.5.1...1.6.0) - 2023-05-21</h2>
 
 ### Added

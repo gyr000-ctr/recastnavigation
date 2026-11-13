@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "Tests/CMakeFiles/Tests.dir/Contrib/catch2/catch_amalgamated.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

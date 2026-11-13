@@ -19,6 +19,7 @@ target_include_directories(DetourCrowd PUBLIC
 
 target_sources(DetourCrowd PRIVATE
     Source/DetourCrowd.cpp
+    Source/DetourFormation.cpp
     Source/DetourLocalBoundary.cpp
     Source/DetourObstacleAvoidance.cpp
     Source/DetourPathCorridor.cpp

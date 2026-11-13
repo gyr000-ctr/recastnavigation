@@ -1,0 +1,13 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/gyr/feedback/uid7492/build-asan/cmake_install.cmake",
+		"/home/gyr/feedback/uid7492/build-asan/DebugUtils/cmake_install.cmake",
+		"/home/gyr/feedback/uid7492/build-asan/Detour/cmake_install.cmake",
+		"/home/gyr/feedback/uid7492/build-asan/DetourCrowd/cmake_install.cmake",
+		"/home/gyr/feedback/uid7492/build-asan/DetourTileCache/cmake_install.cmake",
+		"/home/gyr/feedback/uid7492/build-asan/Recast/cmake_install.cmake",
+		"/home/gyr/feedback/uid7492/build-asan/Tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

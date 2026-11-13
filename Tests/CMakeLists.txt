@@ -15,10 +15,11 @@ endif()
 
 target_include_directories(Tests PRIVATE ./Contrib)
 
-target_sources(Tests PRIVATE 
+target_sources(Tests PRIVATE
 	Contrib/catch2/catch_amalgamated.cpp
 	Detour/Tests_Detour.cpp
 	DetourCrowd/Tests_DetourPathCorridor.cpp
+	DetourCrowd/Tests_DetourFormation.cpp
 	Recast/Tests_Alloc.cpp
 	Recast/Tests_Recast.cpp
 	Recast/Tests_RecastFilter.cpp
