@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 <h2>[Unreleased](https://github.com/recastnavigation/recastnavigation/compare/1.6.0...HEAD)</h2>
+
+### Added
+- Optional, explicitly opt-in `RecastParallel` component (CMake option
+  `RECASTNAVIGATION_PARALLEL`, off by default) for parallel tiled-navmesh
+  building across worker threads. Produces tile blobs and navmeshes
+  byte-for-byte identical to the serial build, independent of thread count or
+  completion order, with per-tile isolated intermediates, cooperative
+  cancellation, deterministic failure propagation and deterministic serial
+  degradation when worker threads are unavailable. Does not change any existing
+  `rcBuild*`/`dt*` API or the default single-threaded behaviour.
 <h2>[1.6.0](https://github.com/recastnavigation/recastnavigation/compare/1.5.1...1.6.0) - 2023-05-21</h2>
 
 ### Added

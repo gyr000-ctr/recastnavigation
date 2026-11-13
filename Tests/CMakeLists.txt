@@ -15,7 +15,7 @@ endif()
 
 target_include_directories(Tests PRIVATE ./Contrib)
 
-target_sources(Tests PRIVATE 
+target_sources(Tests PRIVATE
 	Contrib/catch2/catch_amalgamated.cpp
 	Detour/Tests_Detour.cpp
 	DetourCrowd/Tests_DetourPathCorridor.cpp
@@ -26,5 +26,21 @@ target_sources(Tests PRIVATE
 )
 
 target_link_libraries(Tests PRIVATE Recast Detour DetourCrowd)
+
+# Optional parallel-tile tests. Only compiled when the opt-in RecastParallel
+# component is enabled; default builds are completely unaffected.
+if (RECASTNAVIGATION_PARALLEL)
+	find_package(Threads REQUIRED)
+	target_sources(Tests PRIVATE
+		RecastParallel/Tests_ParallelRunner.cpp
+		RecastParallel/Tests_ParallelTileBuild.cpp
+	)
+	target_link_libraries(Tests PRIVATE RecastParallel Threads::Threads)
+	if(NOT MSVC)
+		# Re-enable exceptions for the cancellation/exception-propagation tests;
+		# keep RTTI off to match the no-RTTI core and RecastParallel libraries.
+		target_compile_options(Tests PRIVATE -fexceptions)
+	endif()
+endif()
 
 add_test(NAME Tests COMMAND Tests)
